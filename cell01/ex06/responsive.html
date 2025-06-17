@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Table</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    table {
+      width: 100vw;     /* ครอบคลุมทั้งหน้ากว้างของเว็บ */
+      height: 100vh;    /* ครอบคลุมทั้งหน้าสูงของเว็บ */
+      border-collapse: collapse;
+      table-layout: fixed; /* บังคับให้แต่ละ cell แบ่งพื้นที่เท่ากัน */
+    }
+
+    td {
+      border: 2px solid black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 20px;
+      color: #333;
+      word-wrap: break-word;
+    }
+
+    .cell1 { background-color: #c2d185; }
+    .cell2 { background-color: #f4b6a8; }
+    .cell3 { background-color: #a0d8ef; }
+    .cell4 { background-color: #f7d794; }
+    .cell5 { background-color: #e0aaff; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td class="cell1">Cell 1</td>
+      <td class="cell2">Cell 2</td>
+    </tr>
+    <tr>
+      <td class="cell3">Cell 3</td>
+      <td class="cell4">Cell 4</td>
+    </tr>
+    <tr>
+      <td class="cell5" colspan="2">Cell 5 - Full width</td>
+    </tr>
+  </table>
+
+</body>
+</html>
