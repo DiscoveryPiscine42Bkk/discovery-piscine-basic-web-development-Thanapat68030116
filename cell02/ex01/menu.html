@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เมนูแซนด์วิช SNCF</title>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #fffaf2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .sandwich-menu {
+      background-color: #fff0c9;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .sandwich-menu h2 {
+      margin: 0;
+      text-align: center;
+      color: #5c4434;
+    }
+
+    .dropdown {
+      margin-top: 20px;
+    }
+
+    .dropdown input {
+      display: none;
+    }
+
+    .dropdown label {
+      display: block;
+      background-color: #f6cd90;
+      color: #3e3026;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      border: 2px solid #d9a65d;
+      text-align: center;
+    }
+
+    .dropdown ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #fff7e0;
+      border: 2px solid #d9a65d;
+      border-radius: 8px;
+      margin-top: 8px;
+      display: none;
+    }
+
+    .dropdown ul li {
+      padding: 10px 12px;
+      border-top: 1px solid #f0d7a2;
+    }
+
+    .dropdown input:checked + label + ul {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sandwich-menu">
+    <h2>🥪 เมนูแซนด์วิช SNCF</h2>
+    <div class="dropdown">
+      <input type="checkbox" id="toggle-menu">
+      <label for="toggle-menu">เลือกไส้ของคุณ</label>
+      <ul>
+        <li>แฮม</li>
+        <li>ชีส</li>
+        <li>เนย</li>
+        <li>แตงกวาดอง</li>
+        <li>มัสตาร์ด</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
