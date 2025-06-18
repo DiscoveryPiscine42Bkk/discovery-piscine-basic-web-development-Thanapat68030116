@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Web Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .parallax-section {
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .parallax1 {
+      background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-blue-stock-official-1920x1080-5630.jpg');
+    }
+
+    .parallax2 {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    }
+
+    .content-block {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      font-size: 1.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parallax-section parallax1">
+    <div>Hello welcome to Parallax!</div>
+  </div>
+
+  <div class="content-block">
+    ข้อความของคุณสามารถอยู่ในบล็อกสีดำนี้ เช่น "นี่คือเนื้อหาตรงกลาง"
+  </div>
+
+  <div class="parallax-section parallax2">
+    <div>End of page Parallax!</div>
+  </div>
+
+</body>
+</html>
